@@ -1,0 +1,209 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: hsl(202, 86%, 94%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  position: relative;
+}
+.formContainer {
+  padding: 1rem 1rem;
+  width: 68%;
+  border-radius: 15px;
+  background-color: #fff;
+  height: 23rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.formBox {
+  width: 45%;
+  background-color: #fff;
+}
+.formContainerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.formContainerHeader h3 {
+  color: hsl(202, 55%, 16%);
+  font-weight: 700;
+}
+.formContainerHeader button {
+  border: none;
+  background: transparent;
+}
+.formContainerHeader button span {
+  border-bottom: 1px gray solid;
+  font-size: 10px;
+  color: gray;
+}
+.inputBox label {
+  font-size: small;
+  color: hsl(200, 24%, 40%);
+  font-weight: 600;
+}
+
+.inputBoxSub label {
+  font-size: small;
+  color: hsl(200, 24%, 40%);
+  font-weight: 600;
+}
+.input {
+  border: 1px solid hsl(200, 26%, 54%);
+  padding: 1px 1px;
+  border-radius: 3px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input span {
+  font-size: small;
+  background-color: hsl(202, 86%, 94%);
+  padding: 8px 10px;
+  font-weight: 700;
+  color: hsl(200, 24%, 40%);
+}
+.input input {
+  border: none;
+  outline: none;
+  font-weight: 500;
+}
+.inputBoxSubInput {
+  border: 1px solid hsl(200, 26%, 54%);
+  padding: 1px 1px;
+  border-radius: 3px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.inputBoxSubInput span {
+  font-size: small;
+  background-color: hsl(202, 86%, 94%);
+  padding: 8px 10px;
+  font-weight: 700;
+  color: hsl(200, 24%, 40%);
+}
+.inputBoxSubInput input {
+  border: none;
+  outline: none;
+  font-weight: 500;
+  width: 100%;
+}
+.inputBoxContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+  width: 100%;
+  /* background-color: green; */
+}
+.inputBoxSub {
+  /* background-color: yellow; */
+  width: 47%;
+}
+.morguageTypeSec {
+  margin-top: 8px;
+}
+.morguageTypeSec span {
+  font-size: small;
+  color: hsl(200, 24%, 40%);
+  font-weight: 600;
+}
+.morguageTypeInput {
+  border: 1px solid hsl(200, 26%, 54%);
+  /* border: 1px solid red; */
+  padding: 8px 3px;
+  border-radius: 3px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.morguageTypeInput label {
+  font-size: small;
+}
+.formBtn {
+  background-color: hsl(61, 70%, 52%);
+  margin-top: 26px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+.formBtn img {
+  font-size: 1px;
+}
+.formBtn button {
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  
+}
+.resultsContainer {
+  background-color: hsl(201, 56%, 16%);
+  padding: 1rem 1.5rem;
+  height: 23rem;
+  width: 18rem;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  right: 130px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  /* margin-left: -270px; */
+}
+.resultsContainer h3 {
+  color: #fff;
+}
+.resultsContainerDesc {
+  color: hsl(203, 41%, 72%);
+  font-size: small;
+}
+.amountBox {
+  background-color: #151515;
+  border-top: 3px solid hsl(61, 70%, 52%);
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.amountBoxHeader {
+  font-size: small;
+  color: hsl(203, 41%, 72%);
+}
+.amount {
+  color: hsl(61, 70%, 52%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 18px;
+  border-bottom: 1px solid hsl(203, 41%, 72%);
+}
+.totalAmountSec p:nth-child(1) {
+  color: hsl(203, 41%, 72%);
+}
+.totalAmountSec p:nth-child(2) {
+  color: white;
+  font-weight: 500;
+}
+

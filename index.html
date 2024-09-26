@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Morguage Calculator</title>
+  </head>
+  <body>
+    <div class="heroContainer">
+      <div class="mainContainer">
+        <div class="formContainer">
+          <div class="formBox">
+            <div class="formContainerHeader">
+              <h3>Morguage Calculator</h3>
+              <button id="clear"><span>Clear All</span></button>
+            </div>
+            <form id="form">
+              <div class="inputBox">
+                <label for="morguageAmount">Morguage Amount</label>
+                <div id="inputError" class="input">
+                  <span>GHS</span>
+                  <input id="morguageAmount" type="text" />
+                </div>
+              </div>
+              <div class="inputBoxContainer">
+                <div class="inputBoxSub">
+                  <label for="morguageAmount">Morguage Term</label>
+                  <div id="mortgageTermError" class="inputBoxSubInput">
+                    <input
+                      class="morguageAmount"
+                      id="mortgageTerm"
+                      type="text"
+                    />
+                    <span>years</span>
+                  </div>
+                </div>
+                <div class="inputBoxSub">
+                  <label for="morguageAmount">Interest Rate</label>
+                  <div id="mortgageInterest" class="inputBoxSubInput">
+                    <input
+                      class="morguageAmount"
+                      id="mortgageInterestAmount"
+                      type="text"
+                    />
+                    <span>%</span>
+                  </div>
+                  <!-- <span id="interestError" class="errorMessage"></span> -->
+                </div>
+              </div>
+              <div class="morguageTypeSec">
+                <span>Morguage Type</span>
+                <div class="morguageTypeSecInputBox">
+                  <div id="repaymentsError" class="morguageTypeInput">
+                    <input
+                      id="repayments"
+                      type="radio"
+                      name="morguageType"
+                      value="Repayment"
+                      
+                    />
+                    <label for="repayments">Repayment</label>
+                  </div>
+                </div>
+
+                <div class="morguageTypeSecInputBox">
+                  <div id="interestOnlyError" class="morguageTypeInput">
+                    <input
+                      id="interestOnly"
+                      type="radio"
+                      name="morguageType"
+                      value="interestOnly"
+                    />
+                    <label for="interestOnly">Interest Only</label>
+                  </div>
+                </div>
+              </div>
+              <div class="formBtn">
+                <img
+                  class="formBtnImg"
+                  src="/assets/images/icon-calculator.svg"
+                  alt="svgImg"
+                />
+                <button>Calculate Repayments</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="resultsContainer">
+          <h3>Your Results</h3>
+          <p class="resultsContainerDesc">
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click “calculate
+            repayments” again.
+          </p>
+          <div class="amountBox">
+            <p class="amountBoxHeader">Your Monthly Payment</p>
+
+            <p class="amount">GHS 20,0000</p>
+
+            <div class="totalAmountSec">
+              <p>Total you will pay over the term</p>
+
+              <p class="totalAmount">GHS 345,0000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
