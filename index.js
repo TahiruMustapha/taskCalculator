@@ -94,7 +94,6 @@ formEl.addEventListener("submit", (e) => {
     interestOnlyError.style["border"] = "1px solid red";
     isValid = false;
   }
-
   const toTalRepayment = calculateRepayment(
     morguageAmountEl.value,
     mortgageInterestAmount.value,
@@ -105,7 +104,7 @@ formEl.addEventListener("submit", (e) => {
     morguageAmountEl.value,
     mortgageInterestAmount.value
   );
-  totalPaymentForTermEl.textContent = `GHS${toTalRepayment}`;
-  totalInterestPerMonthEl.textContent = `GHS${totalInterstOnly}`;
+  totalPaymentForTermEl.textContent = `GHS ${toTalRepayment}`;
+  totalInterestPerMonthEl.textContent = `GHS ${totalInterstOnly}`;
   return isValid;
 });
