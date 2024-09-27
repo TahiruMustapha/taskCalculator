@@ -65,7 +65,6 @@ body {
 }
 .input {
   border: 1px solid hsl(200, 26%, 54%);
-  padding: 1px 1px;
   border-radius: 3px;
   margin-top: 8px;
   display: flex;
@@ -79,15 +78,22 @@ body {
   padding: 8px 10px;
   font-weight: 700;
   color: hsl(200, 24%, 40%);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .input input {
   border: none;
   outline: none;
   font-weight: 500;
 }
+.input input::-webkit-outer-spin-button,
+.input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .inputBoxSubInput {
   border: 1px solid hsl(200, 26%, 54%);
-  padding: 1px 1px;
+  /* padding: 1px 1px; */
   border-radius: 3px;
   margin-top: 8px;
   display: flex;
@@ -100,12 +106,19 @@ body {
   padding: 8px 10px;
   font-weight: 700;
   color: hsl(200, 24%, 40%);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 .inputBoxSubInput input {
   border: none;
   outline: none;
   font-weight: 500;
   width: 100%;
+}
+.inputBoxSubInput input::-webkit-outer-spin-button,
+.inputBoxSubInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .inputBoxContainer {
   display: flex;

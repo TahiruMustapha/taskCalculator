@@ -20,7 +20,7 @@
                 <label for="morguageAmount">Morguage Amount</label>
                 <div id="inputError" class="input">
                   <span>GHS</span>
-                  <input id="morguageAmount" type="text" />
+                  <input id="morguageAmount" type="number" />
                 </div>
               </div>
               <div class="inputBoxContainer">
@@ -30,7 +30,7 @@
                     <input
                       class="morguageAmount"
                       id="mortgageTerm"
-                      type="text"
+                      type="number"
                     />
                     <span>years</span>
                   </div>
@@ -41,7 +41,7 @@
                     <input
                       class="morguageAmount"
                       id="mortgageInterestAmount"
-                      type="text"
+                      type="number"
                     />
                     <span>%</span>
                   </div>
@@ -96,12 +96,12 @@
           <div class="amountBox">
             <p class="amountBoxHeader">Your Monthly Payment</p>
 
-            <p class="amount">GHS 20,0000</p>
+            <p id="totalInterestPerMonth" class="amount"></p>
 
             <div class="totalAmountSec">
               <p>Total you will pay over the term</p>
 
-              <p class="totalAmount">GHS 345,0000</p>
+              <p id="totalPaymentForTerm" class="totalAmount"></p>
             </div>
           </div>
         </div>
