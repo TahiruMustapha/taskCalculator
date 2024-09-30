@@ -163,6 +163,8 @@ body {
 }
 .mortgageTypeInput label {
   font-size: small;
+  font-weight:bolder;
+  color: hsl(200, 24%, 40%);
 }
 .mortgageTypeInput input {
   accent-color: hsl(61, 70%, 52%);
@@ -313,22 +315,40 @@ body {
   }
   .formContainer {
     width: 60%;
-    margin-right: 5%;
+    margin-right: 10%;
+  }
+  .formBox {
+    width: 55%;
   }
   .resultsInitialPage {
-    right: 16%;
+    right: 12%;
   }
   .resultsContainer {
-    right: 16%;
+    right: 12%;
   }
 }
-
+@media (max-width: 820px) {
+  .formContainer {
+    width: 60%;
+    margin-right: 13%;
+  }
+  .formBox {
+    width: 53%;
+  }
+  .resultsInitialPage {
+    right: 11%;
+  }
+  .resultsContainer {
+    right: 12%;
+  }
+}
 @media (max-width: 768px) {
   .mainContainer {
     justify-content: start;
     width: 100%;
   }
-  .resultsInitialPage {
+  .resultsInitialPage,
+  .resultsContainer {
     right: 30px;
     width: 40%;
   }
@@ -343,21 +363,12 @@ body {
   }
 }
 @media (max-width: 540px) {
-  .heroContainer {
-    /* height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-  }
   .mainContainer {
-    /* background-color: red; */
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    flex-direction: column;   
+    flex-direction: column;
   }
   .formContainer {
     width: 85%;
@@ -377,26 +388,22 @@ body {
   .inputBoxSub {
     width: 100%;
   }
-  .resultsInitialPage {
-    /* bottom: 0%; */
+  .resultsInitialPage,
+  .resultsContainer {
     border-radius: 0;
     width: 81%;
     margin-top: 29.3rem;
     height: fit-content;
     left: 15px;
-    /* display: none; */
-    /* margin-right: -3px; */
   }
 }
-@media (max-width: 400px){
-  .resultsInitialPage {
-    /* bottom: 0%; */
+@media (max-width: 400px) {
+  .resultsInitialPage,
+  .resultsContainer {
     border-radius: 0;
     width: 80.5%;
     margin-top: 29.3rem;
     height: fit-content;
     left: 3.5%;
-    /* display: none; */
-    /* margin-right: -3px; */
   }
 }
