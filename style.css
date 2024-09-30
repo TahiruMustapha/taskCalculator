@@ -164,8 +164,8 @@ body {
 .mortgageTypeInput label {
   font-size: small;
 }
-.mortgageTypeInput input{
- accent-color:hsl(61, 70%, 52%);
+.mortgageTypeInput input {
+  accent-color: hsl(61, 70%, 52%);
 }
 .formBtn {
   background-color: hsl(61, 70%, 52%);
@@ -197,7 +197,7 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
-  right: 75px;
+  right: 125px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .resultsInitialPage div {
@@ -230,7 +230,7 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
-  right: 75px;
+  right: 125px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   /* margin-left: -270px; */
   display: none;
@@ -277,15 +277,126 @@ body {
   font-weight: 600;
 }
 /* MOBILE */
-@media (max-width: 768px) {
-  
-}
-@media (max-width: 480px) {
+@media (max-width: 1440px) {
   .mainContainer {
+    width: 100%;
+  }
+  .formContainer {
+    width: 49%;
+    /* margin-right:70px ; */
+  }
+  .resultsInitialPage {
+    right: 24%;
+  }
+  .resultsContainer {
+    right: 24%;
+  }
+}
+@media (max-width: 1024px) {
+  .mainContainer {
+    width: 100%;
+  }
+  .formContainer {
+    width: 50%;
+    margin-right: 5%;
+  }
+  .resultsInitialPage {
+    right: 19%;
+  }
+  .resultsContainer {
+    right: 19%;
+  }
+}
+@media (max-width: 912px) {
+  .mainContainer {
+    width: 100%;
+  }
+  .formContainer {
+    width: 60%;
+    margin-right: 5%;
+  }
+  .resultsInitialPage {
+    right: 16%;
+  }
+  .resultsContainer {
+    right: 16%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    justify-content: start;
+    width: 100%;
+  }
+  .resultsInitialPage {
+    right: 30px;
+    width: 40%;
+  }
+  .formContainer {
+    padding: 1rem 1rem;
+    width: 50%;
+    margin-left: 30px;
+    height: 23rem;
+  }
+  .formBox {
+    width: 80%;
+  }
+}
+@media (max-width: 540px) {
+  .heroContainer {
+    /* height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 60%;
-    position: relative;
+    justify-content: center; */
+  }
+  .mainContainer {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;   
+  }
+  .formContainer {
+    width: 85%;
+    border-radius: 0;
+    margin: 1rem auto;
+    height: fit-content;
+  }
+  .formBox {
+    width: 100%;
+  }
+  .inputBoxContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+  .inputBoxSub {
+    width: 100%;
+  }
+  .resultsInitialPage {
+    /* bottom: 0%; */
+    border-radius: 0;
+    width: 81%;
+    margin-top: 29.3rem;
+    height: fit-content;
+    left: 15px;
+    /* display: none; */
+    /* margin-right: -3px; */
+  }
+}
+@media (max-width: 400px){
+  .resultsInitialPage {
+    /* bottom: 0%; */
+    border-radius: 0;
+    width: 80.5%;
+    margin-top: 29.3rem;
+    height: fit-content;
+    left: 3.5%;
+    /* display: none; */
+    /* margin-right: -3px; */
   }
 }
