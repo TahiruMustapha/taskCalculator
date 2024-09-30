@@ -277,3 +277,15 @@ body {
   font-weight: 600;
 }
 /* MOBILE */
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 480px) {
+  .mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    position: relative;
+  }
+}
