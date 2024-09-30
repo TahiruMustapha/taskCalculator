@@ -32,7 +32,7 @@ body {
 }
 .formBox {
   width: 45%;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .formContainerHeader {
   display: flex;
@@ -71,7 +71,9 @@ body {
   align-items: center;
   gap: 8px;
 }
-
+.input:hover {
+  border: 1px solid hsl(200, 24%, 40%);
+}
 .input span {
   font-size: small;
   background-color: hsl(202, 86%, 94%);
@@ -100,6 +102,10 @@ body {
   align-items: center;
   gap: 6px;
 }
+.inputBoxSubInput:hover {
+  border: 1px solid hsl(200, 24%, 40%);
+  /* cursor: pointer; */
+}
 .inputBoxSubInput span {
   font-size: small;
   background-color: hsl(202, 86%, 94%);
@@ -115,6 +121,7 @@ body {
   font-weight: 500;
   width: 100%;
 }
+
 .inputBoxSubInput input::-webkit-outer-spin-button,
 .inputBoxSubInput input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -126,23 +133,22 @@ body {
   gap: 20px;
   margin-top: 10px;
   width: 100%;
-  /* background-color: green; */
 }
+
 .inputBoxSub {
-  /* background-color: yellow; */
   width: 47%;
 }
-.morguageTypeSec {
+
+.mortgageTypeSec {
   margin-top: 8px;
 }
-.morguageTypeSec span {
+.mortgageTypeSec span {
   font-size: small;
   color: hsl(200, 24%, 40%);
   font-weight: 600;
 }
-.morguageTypeInput {
+.mortgageTypeInput {
   border: 1px solid hsl(200, 26%, 54%);
-  /* border: 1px solid red; */
   padding: 8px 3px;
   border-radius: 3px;
   margin-top: 8px;
@@ -150,8 +156,16 @@ body {
   align-items: center;
   gap: 4px;
 }
-.morguageTypeInput label {
+.mortgageTypeInput:hover {
+  border: 1px solid hsl(61, 70%, 52%);
+  cursor: pointer;
+  /* background-color:hsla(61, 70%, 52%, 0.226) ; */
+}
+.mortgageTypeInput label {
   font-size: small;
+}
+.mortgageTypeInput input{
+ accent-color:hsl(61, 70%, 52%);
 }
 .formBtn {
   background-color: hsl(61, 70%, 52%);
@@ -170,7 +184,42 @@ body {
   border: none;
   font-weight: 600;
   font-size: 12px;
-  
+}
+.resultsInitialPage {
+  background-color: hsl(201, 56%, 16%);
+  padding: 1rem 1.5rem;
+  height: 23rem;
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  right: 75px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.resultsInitialPage div {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resultsInitialPage div img {
+  width: 9rem;
+}
+.resultsInitialPage div h3 {
+  color: white;
+  margin-top: 10px;
+}
+.resultsInitialPage div p {
+  text-align: center;
+  color: hsl(203, 41%, 72%);
+  font-size: small;
+  margin-top: -7px;
 }
 .resultsContainer {
   background-color: hsl(201, 56%, 16%);
@@ -181,9 +230,10 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
-  right: 130px;
+  right: 75px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   /* margin-left: -270px; */
+  display: none;
 }
 .resultsContainer h3 {
   color: #fff;
@@ -193,9 +243,9 @@ body {
   font-size: small;
 }
 .amountBox {
-  background-color: #151515;
+  background-color: hsl(202, 60%, 10%);
   border-top: 3px solid hsl(61, 70%, 52%);
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-bottom-left-radius: 5px;
@@ -209,14 +259,21 @@ body {
   color: hsl(61, 70%, 52%);
   font-size: 1.5rem;
   font-weight: 700;
+  margin-top: -8px;
   padding-bottom: 18px;
   border-bottom: 1px solid hsl(203, 41%, 72%);
 }
-.totalAmountSec p:nth-child(1) {
+.totalAmountSec {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.totalAmountSec span:nth-child(1) {
   color: hsl(203, 41%, 72%);
+  font-size: small;
 }
-.totalAmountSec p:nth-child(2) {
+.totalAmountSec span:nth-child(2) {
   color: white;
-  font-weight: 500;
+  font-weight: 600;
 }
-
+/* MOBILE */

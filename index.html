@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Morguage Calculator</title>
+    <title>Mortgage Calculator</title>
   </head>
   <body>
     <div class="heroContainer">
@@ -12,23 +12,23 @@
         <div class="formContainer">
           <div class="formBox">
             <div class="formContainerHeader">
-              <h3>Morguage Calculator</h3>
-              <button id="clear"><span>Clear All</span></button>
+              <h3>Mortgage Calculator</h3>
+              <button onclick="resetInputFields()" id="clear"><span>Clear All</span></button>
             </div>
             <form id="form">
               <div class="inputBox">
-                <label for="morguageAmount">Morguage Amount</label>
+                <label for="mortgageAmount">Mortgage Amount</label>
                 <div id="inputError" class="input">
                   <span>GHS</span>
-                  <input id="morguageAmount" type="number" />
+                  <input id="mortgageAmount" type="number" />
                 </div>
               </div>
               <div class="inputBoxContainer">
                 <div class="inputBoxSub">
-                  <label for="morguageAmount">Morguage Term</label>
+                  <label for="mortgageAmount">Mortgage Term</label>
                   <div id="mortgageTermError" class="inputBoxSubInput">
                     <input
-                      class="morguageAmount"
+                      class="mortgageAmount"
                       id="mortgageTerm"
                       type="number"
                     />
@@ -36,26 +36,26 @@
                   </div>
                 </div>
                 <div class="inputBoxSub">
-                  <label for="morguageAmount">Interest Rate</label>
+                  <label for="mortgageAmount">Interest Rate</label>
                   <div id="mortgageInterest" class="inputBoxSubInput">
                     <input
-                      class="morguageAmount"
+                      class="mortgageAmount"
                       id="mortgageInterestAmount"
                       type="number"
+                      step="0.01" 
                     />
                     <span>%</span>
                   </div>
-                  <!-- <span id="interestError" class="errorMessage"></span> -->
                 </div>
               </div>
-              <div class="morguageTypeSec">
-                <span>Morguage Type</span>
-                <div class="morguageTypeSecInputBox">
-                  <div id="repaymentsError" class="morguageTypeInput">
+              <div class="mortgageTypeSec">
+                <span>Mortguge Type</span>
+                <div class="mortgageTypeSecInputBox">
+                  <div id="repaymentsError" class="mortgageTypeInput">
                     <input
                       id="repayments"
                       type="radio"
-                      name="morguageType"
+                      name="mortgageType"
                       value="Repayment"
                       
                     />
@@ -63,12 +63,12 @@
                   </div>
                 </div>
 
-                <div class="morguageTypeSecInputBox">
-                  <div id="interestOnlyError" class="morguageTypeInput">
+                <div class="mortgageTypeSecInputBox">
+                  <div id="interestOnlyError" class="mortgageTypeInput">
                     <input
                       id="interestOnly"
                       type="radio"
-                      name="morguageType"
+                      name="mortgageType"
                       value="interestOnly"
                     />
                     <label for="interestOnly">Interest Only</label>
@@ -78,15 +78,15 @@
               <div class="formBtn">
                 <img
                   class="formBtnImg"
-                  src="/assets/images/icon-calculator.svg"
+                  src="./assets//images//icon-calculator.svg"
                   alt="svgImg"
                 />
-                <button>Calculate Repayments</button>
+                <button type="submit">Calculate Repayments</button>
               </div>
             </form>
           </div>
         </div>
-        <div class="resultsContainer">
+        <div id="resultsContainer" class="resultsContainer">
           <h3>Your Results</h3>
           <p class="resultsContainerDesc">
             Your results are shown below based on the information you provided.
@@ -94,16 +94,22 @@
             repayments” again.
           </p>
           <div class="amountBox">
-            <p class="amountBoxHeader">Your Monthly Payment</p>
-
-            <p id="totalInterestPerMonth" class="amount"></p>
-
+              <p class="amountBoxHeader">Your Monthly Payment<p/>
+              <p id="totalInterestPerMonth" class="amount"><p/>
             <div class="totalAmountSec">
-              <p>Total you will pay over the term</p>
-
-              <p id="totalPaymentForTerm" class="totalAmount"></p>
+              <span>Total you will pay over the term</span>
+              <span id="totalPaymentForTerm" class="totalAmount"><span/>
             </div>
           </div>
+        </div>
+        <div id="resultsInitialPage" class="resultsInitialPage">
+          <div>
+            <img src="./assets//images//illustration-empty.svg" alt="ilust">
+            <h3>Results shown here</h3>
+            <p>Complete the form and click “calculate repayments” to see what 
+              your monthly repayments would be.</p>
+          </div>
+        
         </div>
       </div>
     </div>
