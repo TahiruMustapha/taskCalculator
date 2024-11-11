@@ -285,13 +285,14 @@ body {
 @media (max-width: 1440px) {
   .mainContainer {
     width: 100%;
+    
   }
   .formContainer {
-    width: 49%;
+    width: 45%;
     /* margin-right:70px ; */
   }
   .resultsInitialPage {
-    right: 24%;
+    right: 26%;
   }
   .resultsContainer {
     right: 24%;
